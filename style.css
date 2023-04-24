@@ -91,25 +91,28 @@ body{
 /*Quienes somos*/
 
 
-.quienesSomos, .container-galeria{
+#quienesSomos, .container-galeria{
     margin: auto;
     max-width: 75vw;
 }
 
-.quienesSomos{
+#quienesSomos{
     padding: 5rem 0;
 }
 
-.quienesSomos h2{
+#quienesSomos h2{
     text-align: center;
     margin-bottom: 1rem;
     font-family: 'Roboto', sans-serif;
     font-weight: 700;
 }
 
-.quienesSomos p{
+#quienesSomos p{
     text-align: center;
     font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    line-height: 2;
+    font-weight: 400;
 }
 
 /*seccion gatitos*/
@@ -127,14 +130,14 @@ body{
 
 /*Galeria*/
 
-.galeria{
+#galeria{
     display: flex;
     flex-direction: column;
     padding: 4rem 0;
     width: 100vw;
 }
 
-.galeria h2{
+#galeria h2{
     text-align: center;
     margin-bottom: 2rem;
 }
@@ -188,7 +191,7 @@ body{
 
 /*contacto*/
 
-.contacto{
+#contacto{
     margin-top: -2rem;
     padding-bottom: 3rem;
 }
@@ -235,6 +238,12 @@ footer{
 
 .link-footer:hover{
     color: #dfd7d7;
+}
+
+.redes{
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
 }
 
 .derechos{
