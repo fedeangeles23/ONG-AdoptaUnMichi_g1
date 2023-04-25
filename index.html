@@ -13,6 +13,7 @@
     <script src="https://code.jquery.com/jquery-3.6.4.min.js" integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8=" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/validate.js/0.13.1/validate.min.js"></script>
     <link rel="stylesheet" href="style.css" type="text/css">
+    
 </head>
 <body>
     <header id="header">
@@ -34,9 +35,6 @@
                     <li class="nav-item">
                         <a class="nav-link" href="#contacto">Contactanos</a>
                     </li>
-                    <li class="nav-item">
-                      <a class="nav-link" href="preguntasFrecuentes.html">Preguntas Frecuentes</a>
-                  </li>
                 </ul>
             </div>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -123,6 +121,71 @@
         </div>
       </div>
     </section>
+
+    <section id="adopta">
+        <div class="container">
+          <div class="row justify-content-center">
+            <div class="col-md-8">
+              <form class="contenedor-adopta" id="form-adopcion">
+                <h2>Adoptá un michi!</h2>
+                <br>
+                <div class="form-adopta">
+                  <label for="nombre">Nombre:</label>
+                  <input type="text" name="nombre" id="nombre" required/>
+                  <label for="apellido">Apellido:</label>
+                  <input type="text" name="apellido" id="apellido" required/>
+                </div>
+                <div class="form-adopta">
+                    <br>
+                  <label>¿Tenés más de 18 años?</label>
+                  <br>
+                  <input type="radio" name="mayor_edad" value="si" required>Sí
+                  <br>
+                  <input type="radio" name="mayor_edad" value="no" required>No
+                </div>
+                <div class="form-adopta">
+                    <br>
+                  <label>¿Vivís en una casa o departamento?</label>
+                  <br>
+                  <input type="radio" name="vivienda" value="casa" required>Casa
+                  <br>
+                  <input type="radio" name="vivienda" value="departamento"required>Departamento
+                <br>
+                </div>
+                <div class="form-adopta">
+                    <br>
+                  <label>¿Tenés patio al aire libre?</label>
+                  <br>
+                  <input type="radio" name="patio" value="si" required>Sí
+                  <br>
+                  <input type="radio" name="patio" value="no" required>No
+                  <br>
+                </div>
+                <div class="form-adopta">
+                    <br>
+                  <label>¿Las ventanas cuentan con rejas de protección?</label>
+                  <br>
+                  <input type="radio" name="rejas" value="si" required>Sí
+                  <br>
+                  <input type="radio" name="rejas" value="no" required>No
+                <div class="form-adopta">
+                    <br>
+                  <label>Por favor completar los siguientes datos:</label>
+                  <br>
+                  <input type="tel" name="telefono" placeholder="Teléfono" required>
+                  <input type="email" name="email" placeholder="Email" required>
+                  <input type="text" name="direccion" placeholder="Dirección" required>
+                  <input type="text" name="numero" placeholder="Número/piso/dpto" required>
+                  <input type="text" name="localidad" placeholder="Localidad" required>
+                  <input type="text" name="cp" placeholder="Código Postal" required>
+                 <br>
+                 <br>
+                <button type="submit" class="btn btn-primary">Enviar</button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
     
     
 
