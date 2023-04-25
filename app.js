@@ -22,7 +22,7 @@ getNewImages();
 
 newImageButton.addEventListener('click', getNewImages);
 
-/* VALIDATE JS FUNCIONES */
+/* VALIDATE JS FUNCIONES FORM CONTACTO */
 
 const form = document.getElementById('form-contacto');
 
