@@ -44,7 +44,6 @@ function enviarFormularioAdop(event) {
     if (validacion === undefined) {
       // formulario valido aca ya tomo los valores del formulario para mostrarlos a modo resumen
       $(document).ready(function() {
-        $('#formAdopcion').submit(function(event) {
           event.preventDefault();
           var nombre = $('#nombre').val();
           var apellido = $('#apellido').val();
@@ -79,7 +78,6 @@ function enviarFormularioAdop(event) {
           var parrafoResumen = $('<p>').html(resumen);
           contenedorResumen.append(tituloResumen).append(parrafoResumen);
           $('#adopta').append(contenedorResumen);
-        });
       }); 
     } else {
       // formulario invalido 

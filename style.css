@@ -220,6 +220,35 @@ body{
     text-align: center;
 }
 
+.respuesta{
+    max-width: 60vw;
+    margin: auto;
+    text-align: center;
+    padding: 3rem 0;
+}
+
+@media (min-width: 768px) {
+    .respuesta{
+        padding: 6rem 0;
+    }
+}
+
+.respuesta p{
+    margin-bottom: 1.5rem;
+}
+
+.respuesta a{
+    background-color: #007bff;
+    color: #fafafa;
+    padding: .5rem 1rem;
+    border-radius: 1rem;
+    text-decoration: none;
+}
+
+.respuesta a:hover{
+    background-color: #026fe4;
+}
+
 
 /*footer*/
 
