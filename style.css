@@ -65,7 +65,7 @@ body {
 }
 
 .hero {
-  background-image: url("img/gatosCaja.jpg");
+  background-image: url("img/gatosCaja.webp");
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -116,7 +116,7 @@ body {
 /*seccion gatitos*/
 
 .gatitos {
-  background-image: url("img/gatitos.jpg");
+  background-image: url("img/gatitos.webp");
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -191,7 +191,7 @@ body {
 /*gatitos2*/
 
 .gatitos2 {
-  background-image: url("img/gatitos2.jpg");
+  background-image: url("img/gatitos2.webp");
   background-position: center bottom;
   background-repeat: no-repeat;
   background-size: cover;
