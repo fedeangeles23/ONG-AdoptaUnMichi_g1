@@ -38,7 +38,20 @@ function enviarFormularioAdop(event) {
       cp:{
         presence: {message: ' es obligatorio'},
         format: {pattern: /^\d+$/,message: ' debe contener solo caracteres numéricos'} 
-      }
+      },
+      edad:{
+        presence: {message: ' es obligatorio'}
+      },
+      vivienda:{
+        presence: {message: ' es obligatorio'}
+      },
+      patio:{
+        presence: {message: ' es obligatorio'}
+      },
+      rejas:{
+        presence: {message: ' es obligatorio'}
+      },
+
     });
   
     if (validacion === undefined) {
@@ -47,7 +60,7 @@ function enviarFormularioAdop(event) {
           event.preventDefault();
           var nombre = $('#nombre').val();
           var apellido = $('#apellido').val();
-          var mayor_edad = $('input[name=mayor_edad]:checked').val();
+          var mayor_edad = $('input[name=edad]:checked').val();
           var vivienda = $('input[name=vivienda]:checked').val();
           var patio = $('input[name=patio]:checked').val();
           var rejas = $('input[name=rejas]:checked').val();
