@@ -18,21 +18,21 @@
         <header id="header">
             <nav class="navbar navbar-expand-md">
                 <div class="logo">
-                    <a class="navbar-brand" href="#">Adopta un Michi</a>
+                    <a class="navbar-brand" href="index.html">Adopta un Michi</a>
                 </div>
                 <div class="collapse navbar-collapse" id="navbarNav">
                     <ul class="navbar-nav">
                         <li class="nav-item active">
-                            <a class="nav-link" href="#">Inicio</a>
+                            <a class="nav-link" href="index.html">Inicio</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="adopcion.html">Adopta!</a>
+                            <a class="nav-link" href="#">Adopta!</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#galeria">Refugio</a>
+                            <a class="nav-link" href="index.html#galeria">Refugio</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#contacto">Contactanos</a>
+                            <a class="nav-link" href="index.html#contacto">Contactanos</a>
                         </li>
                         <li class="nav-item">
                         <a class="nav-link" href="preguntasFrecuentes.html">Preguntas Frecuentes</a>
@@ -46,53 +46,103 @@
             </nav>
         </header> 
 
-        <form id="formAdopcion">
-            <h2>Solicitud de Adopción</h2>
-            <div class="form-group">
-            <label for="nombre">Nombre:</label>
-            <input type="text" class="form-control" id="nombre" name="nombre" placeholder="Ingrese su nombre">
-            <small id="nombreHelp" class="form-text text-danger d-none invalid-feedback">El nombre debe tener al menos 3 caracteres</small>
-            
+        <section id="adopta">
+            <div class="container">
+              <div class="row justify-content-center">
+                <div class="col-md-8">
+                  <form class="contenedor-adopta" id="formAdopcion">
+                    <h2>Adoptá un michi!</h2>
+                    <br>
+                    <div class="contenedorRow">
+                        <div class="form-adopta">
+                        <label for="nombre">Nombre:</label>
+                        <input type="text" name="nombre" id="nombre"/>
+                        <small id="nombreHelp" class="form-text text-danger d-none invalid-feedback"></small>
+                        </div>  
+                        
+                        <div class="form-adopta">
+                        <label for="apellido">Apellido:</label>
+                        <input type="text" name="apellido" id="apellido"/>
+                        <small id="apellidoHelp" class="form-text text-danger d-none invalid-feedback"></small>
+                        </div>
+                    </div>
+                    <div class="form-adopta">
+                        <br>
+                      <label>¿Tenés más de 18 años?</label>
+                      <br>
+                      <input type="radio" name="mayor_edad" value="si" required>Sí
+                      <br>
+                      <input type="radio" name="mayor_edad" value="no" required>No
+                    </div>
+                    <div class="form-adopta">
+                        <br>
+                      <label>¿Vivís en una casa o departamento?</label>
+                      <br>
+                      <input type="radio" name="vivienda" value="casa" required>Casa
+                      <br>
+                      <input type="radio" name="vivienda" value="departamento"required>Departamento
+                    <br>
+                    </div>
+                    <div class="form-adopta">
+                        <br>
+                      <label>¿Tenés patio al aire libre?</label>
+                      <br>
+                      <input type="radio" name="patio" value="si" required>Sí
+                      <br>
+                      <input type="radio" name="patio" value="no" required>No
+                      <br>
+                    </div>
+                    <div class="form-adopta">
+                        <br>
+                      <label>¿Las ventanas cuentan con rejas de protección?</label>
+                      <br>
+                      <input type="radio" name="rejas" value="si" required>Sí
+                      <br>
+                      <input type="radio" name="rejas" value="no" required>No
+                      <div class="form-adopta">
+                        <br>
+                        <label>Por favor completar los siguientes datos:</label>
+                        <br>
+                    
+                        <div class="contenedorRow form-group mb-3">  
+                            <input type="tel" name="telefono" id="telefono" placeholder="Teléfono">
+                            <small id="telefonoHelp" class="form-text text-danger d-none invalid-feedback mt-2"></small>
+                        </div>
+                    
+                        <div class="contenedorRow form-group mb-3">
+                            <input type="email" name="email" id="email" placeholder="Email">
+                            <small id="emailHelp" class="form-text text-danger d-none invalid-feedback mt-2"></small>
+                        </div>
+                    
+                        <div class="contenedorRow form-group mb-3">
+                            <input type="text" name="direccion" id="direccion" placeholder="Dirección">
+                            <small id="direccionHelp" class="form-text text-danger d-none invalid-feedback mt-2"></small>
+                        </div>
+                    
+                        <div class="contenedorRow form-group mb-3">
+                            <input type="text" name="numero" id="numero" placeholder="Número">
+                            <small id="numeroHelp" class="form-text text-danger d-none invalid-feedback mt-2"></small>
+                        </div>
+                    
+                        <div class="contenedorRow form-group mb-3">
+                            <input type="text" name="localidad" id="localidad" placeholder="Localidad">
+                            <small id="localidadHelp" class="form-text text-danger d-none invalid-feedback mt-2"></small>
+                        </div>
+                    
+                        <div class="contenedorRow form-group mb-3">
+                            <input type="text" name="cp" id="cp" placeholder="Código Postal">
+                            <small id="cpHelp" class="form-text text-danger d-none invalid-feedback mt-2"></small>
+                        </div>
+                    </div>
+                    
+
+                    <button type="submit" class="btn btn-primary botonAdopcion">Enviar</button>
+                  </form>
+
+                </div>
+              </div>
             </div>
-            <div class="form-group">
-            <label for="apellido">Apellido:</label>
-            <input type="text" class="form-control" id="apellido" name="apellido" placeholder="Ingrese su apellido">
-            <small id="apellidoHelp" class="form-text text-danger d-none invalid-feedback">El apellido debe tener al menos 3 caracteres</small>
-            </div>
-            <div class="form-group">
-            <label for="dni">DNI:</label>
-            <input type="text" class="form-control" id="dni" name="dni" placeholder="Ingrese su DNI">
-            <small id="dniHelp" class="form-text text-danger d-none invalid-feedback">El DNI debe tener 8 digitos</small>
-            </div>
-            <div class="form-group">
-            <label for="provincia">Provincia:</label>
-            <input type="text" class="form-control" id="provincia" name="provincia" placeholder="Ingrese su provincia">
-            <small id="provinciaHelp" class="form-text text-danger d-none invalid-feedback">Este campo es requerido</small>
-            </div>
-            <div class="form-group">
-            <label for="localidad">Localidad:</label>
-            <input type="text" class="form-control" id="localidad" name="localidad" placeholder="Ingrese su localidad">
-            <small id="localidadHelp" class="form-text text-danger d-none invalid-feedback">Este campo es requerido</small>
-            
-            </div>
-            <div class="form-group">
-            <label for="direccion">Dirección:</label>
-            <input type="text" class="form-control" id="direccion" name="direccion" placeholder="Ingrese su dirección">
-            <small id="direccionHelp" class="form-text text-danger d-none invalid-feedback">La direccion debe tener al menos 5 caracteres</small>
-            </div>
-            <div class="form-group">
-            <label for="telefono">Teléfono:</label>
-            <input type="text" class="form-control" id="telefono" name="telefono" placeholder="Ingrese su teléfono">
-            <small id="telefonoHelp" class="form-text text-danger d-none invalid-feedback">El telefono es requerido</small>
-            </div>
-            <div class="form-group">
-            <label for="email">Email:</label>
-            <input type="email" class="form-control" id="email" name="email" placeholder="Ingrese su email">
-            <small id="emailHelpAdop" class="form-text text-danger d-none invalid-feedback">Ingrese un email valido</small>
-            
-            </div>
-            <button type="submit" class="btn btn-primary">Enviar</button>
-        </form>
+          </section>
         
 
         <footer class="footer">

@@ -67,7 +67,7 @@ body{
 }
 
 .hero{
-    background-image: url("img/gatosCaja.jpg");
+    background-image: url("img/gatosCaja.webp");
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -118,7 +118,7 @@ body{
 /*seccion gatitos*/
 
 .gatitos{
-    background-image: url("img/gatitos.jpg");
+    background-image: url("img/gatitos.webp");
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -193,7 +193,7 @@ body{
 /*gatitos2*/
 
 .gatitos2{
-    background-image: url("img/gatitos2.jpg");
+    background-image: url("img/gatitos2.webp");
     background-position: center bottom;
     background-repeat: no-repeat;
     background-size: cover;
@@ -218,10 +218,6 @@ body{
 
 .contenedor-contacto h2{
     text-align: center;
-}
-
-.contenedor-contacto button{
-
 }
 
 
@@ -267,8 +263,7 @@ footer{
 
 /*formulario adopcion*/
 #adopta {
-    margin-top: -2rem;
-    padding-bottom: 3rem;
+    margin: 3rem 0;
   }
   
   .contenedor-adopta {
@@ -280,3 +275,28 @@ footer{
   .contenedor-adopta h2 {
     text-align: center;
   }
+
+  @media (min-width: 768px) {
+   
+  .contenedorRow{
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+  }   
+  }
+
+  .botonAdopcion{
+    margin-top: .5rem;
+  }
+
+/*Resumen datos de adopcion*/
+
+.resumen{
+    max-width: 60vw;
+    margin: 0 auto;
+    padding: 2rem;
+    background-color: #fff;
+    border-radius: 2rem;
+    font-family: 'Roboto', sans-serif;
+}
+
