@@ -11,6 +11,7 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 
     <script src="https://code.jquery.com/jquery-3.6.4.min.js" integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/validate.js/0.13.1/validate.min.js"></script>
     <link rel="stylesheet" href="style.css" type="text/css">
 </head>
 <body>
@@ -33,6 +34,9 @@
                     <li class="nav-item">
                         <a class="nav-link" href="#contacto">Contactanos</a>
                     </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="preguntasFrecuentes.html">Preguntas Frecuentes</a>
+                  </li>
                 </ul>
             </div>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -77,44 +81,50 @@
 
     </section>
 
-    <section id="galeria">
-        <div class="container-galeria">
-            <h2>Gatos del refugio</h2>
-            <div id="image-container"></div>
-            <div class="contenedor-boton">
-                <button id="new-image-button">Ver mas gatitos</button>
-            </div>
+    <section id="galeria" class="py-4">
+      <div class="container">
+        <h2 class="text-center mb-4">Gatos del refugio</h2>
+        <div id="image-container" class="d-flex flex-wrap justify-content-center"></div>
+        <div class="d-flex justify-content-center mt-4">
+          <button id="new-image-button" class="btn btn-primary">Ver más gatitos</button>
         </div>
+      </div>
     </section>
+
 
     <section class="gatitos2">
 
     </section>
 
     <section id="contacto">
-        <div class="container">
-          <div class="row justify-content-center">
-            <div class="col-md-8">
-              <form class="contenedor-contacto">
-                <h2>Contáctanos</h2>
-                <div class="form-group">
-                  <label for="nombre">Nombre</label>
-                  <input type="text" class="form-control" id="nombre" placeholder="Ingresa tu nombre">
-                </div>
-                <div class="form-group">
-                  <label for="email">Email</label>
-                  <input type="email" class="form-control" id="email" placeholder="Ingresa tu email">
-                </div>
-                <div class="form-group">
-                  <label for="mensaje">Mensaje</label>
-                  <textarea class="form-control" id="mensaje" rows="5" placeholder="Escribe tu mensaje aquí"></textarea>
-                </div>
-                <button type="submit" class="btn btn-primary">Enviar</button>
-              </form>
-            </div>
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-md-8">
+            <form class="contenedor-contacto" id="form-contacto">
+              <h2>Contáctanos</h2>
+              <div class="form-group">
+                <label for="nombre">Nombre</label>
+                <input type="text" class="form-control" id="nombre" name="nombre" placeholder="Ingresa tu nombre">
+                <small id="nombreHelp" class="form-text text-danger d-none invalid-feedback">El nombre no puede estar vacío</small>
+              </div>
+              <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" class="form-control" id="email" name="email" placeholder="Ingresa tu email">
+                <small id="emailHelp" class="form-text text-danger d-none invalid-feedback">Ingresa un email válido</small>
+              </div>
+              <div class="form-group">
+                <label for="mensaje">Mensaje</label>
+                <textarea class="form-control" id="mensaje" name="mensaje" rows="5" placeholder="Escribe tu mensaje aquí"></textarea>
+                <small id="mensajeHelp" class="form-text text-danger d-none invalid-feedback">El mensaje no puede estar vacío</small>
+              </div>
+              <button type="submit" class="btn btn-primary">Enviar</button>
+            </form>
           </div>
         </div>
-      </section>
+      </div>
+    </section>
+    
+    
 
         <footer class="footer">
             <div class="container">
