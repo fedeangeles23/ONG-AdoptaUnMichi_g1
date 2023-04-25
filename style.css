@@ -128,12 +128,12 @@ body {
 
 /*Galeria*/
 
-#galeria {
-  display: flex;
-  flex-direction: column;
-  padding: 4rem 0;
-  width: 100vw;
-  margin: 3rem 0;
+#galeria{
+    display: flex;
+    flex-direction: column;
+    padding: 4rem 0;
+    width: 100vw;
+    margin: 3rem 0;
 }
 
 #galeria h2 {
@@ -141,27 +141,29 @@ body {
   margin-bottom: 2rem;
 }
 
-#image-container {
-  display: flex;
-  gap: 2rem;
+
+
+#image-container{
+    display: flex;
+    gap: 2rem;
 }
 
-#image-container img {
-  height: 150px;
-  width: 150px;
-  border-radius: 50%;
+#image-container img{
+    height: 150px;
+    width: 150px;    
+    border-radius: 50%;
 }
 
 @media (min-width: 768px) {
-  #image-container {
-    gap: 4rem;
-  }
+    #image-container{
+        gap: 4rem;
+    }
 
-  #image-container img {
-    height: 250px;
-    width: 250px;
+    #image-container img{
+        height: 250px;
+        width: 250px;
+    }
   }
-}
 
 .container-galeria {
   margin-bottom: 2rem;
@@ -172,14 +174,14 @@ body {
   justify-content: center;
 }
 
-#new-image-button {
-  background-color: #007bff;
-  outline: none;
-  border: none;
-  padding: 0.5rem 1rem;
-  border-radius: 0.5rem;
-  color: #f2f2f2;
-  margin-top: 1.5rem;
+#new-image-button{
+    background-color: #007bff;
+    outline: none;
+    border: none;
+    padding: .5rem 1rem;
+    border-radius: .5rem;
+    color: #F2F2F2;
+    margin-top: 1.5rem;
 }
 
 #new-image-button:hover {
@@ -214,9 +216,6 @@ body {
 
 .contenedor-contacto h2 {
   text-align: center;
-}
-
-.contenedor-contacto button {
 }
 
 /*footer*/
