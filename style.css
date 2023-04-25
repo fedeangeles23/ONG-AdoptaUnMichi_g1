@@ -261,6 +261,67 @@ footer{
 }
 
 
+/* Estilos para la sección de preguntas frecuentes */
+#faq {
+    background-color: #fff;
+    padding: 5rem;
+  }
+
+#faq h2 {
+    text-align: center;
+    margin-bottom: 3rem;
+    font-family: "Roboto", sans-serif;
+    font-weight: 700;
+  }
+  
+  #faq .accordion {
+    margin-bottom: 2rem;
+  }
+  
+  #faq .accordion-item {
+    border: none;
+    border-radius: 0.5rem;
+    background-color: #fafafa;
+    box-shadow: 0 0.25rem 0.5rem rgba(0, 0, 0, 0.15);
+  }
+  
+  #faq .accordion-button {
+    background-color: #ffa07a;
+    color: #fff;
+    font-family: "Roboto", sans-serif;
+    font-weight: 700;
+    padding: 1rem;
+    border-radius: 0.5rem;
+  }
+
+#faq .accordion-button:hover {
+    background-color: #f86b4a;
+    cursor: pointer;
+  }
+  
+  #faq .accordion-button:not(.collapsed) {
+    background-color: #f86b4a;
+  }
+  
+  #faq .accordion-collapse {
+    background-color: #fff;
+    border-radius: 0.5rem;
+    box-shadow: 0 0.25rem 0.5rem rgba(0, 0, 0, 0.15);
+    padding: 1rem;
+    margin-top: 0.5rem;
+    color: #666;
+    font-family: "Roboto", sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+  }
+  
+  #faq .accordion-collapse p {
+    margin-bottom: 0;
+  }
+  #faq {
+    background-color: #eaeaea;
+  }
+
 /*formulario adopcion*/
 #adopta {
     margin: 3rem 0;

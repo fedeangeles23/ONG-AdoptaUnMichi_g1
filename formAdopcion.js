@@ -42,7 +42,7 @@ function enviarFormularioAdop(event) {
     });
   
     if (validacion === undefined) {
-      // formulario valido
+      // formulario valido aca ya tomo los valores del formulario para mostrarlos a modo resumen
       $(document).ready(function() {
         $('#formAdopcion').submit(function(event) {
           event.preventDefault();
