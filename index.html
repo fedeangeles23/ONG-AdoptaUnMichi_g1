@@ -39,7 +39,7 @@
           <a class="navbar-brand" href="#">Adopta un Michi</a>
         </div>
         <div class="collapse navbar-collapse" id="navbarNav">
-          <ul class="navbar-nav">
+          <ul class="navbar-nav links">
             <li class="nav-item active">
               <a class="nav-link" href="#">Inicio</a>
             </li>
@@ -53,12 +53,14 @@
               <a class="nav-link" href="#contacto">Contactanos</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="preguntasFrecuentes.html">Preguntas Frecuentes</a>
-          </li>
+              <a class="nav-link" href="preguntasFrecuentes.html"
+                >Faqs</a
+              >
+            </li>
           </ul>
         </div>
         <button
-          class="navbar-toggler"
+          class="navbar-toggler menuResponsive"
           type="button"
           data-toggle="collapse"
           data-target="#navbarNav"
@@ -70,6 +72,23 @@
         </button>
       </nav>
     </header>
+
+    <div class="menu-overlay">
+      <ul class="menu">
+        <li class="menu-item">
+          <a href="adopcion.html">Adopta!</a>
+        </li>
+        <li class="menu-item">
+          <a href="#galeria">Refugio</a>
+        </li>
+        <li class="menu-item">
+          <a href="#contacto">Contactanos</a>
+        </li>
+        <li class="menu-item">
+          <a href="preguntasFrecuentes.html">Faqs</a>
+        </li>
+      </ul>
+    </div>
 
     <main class="hero">
       <div class="parrafo">
@@ -252,5 +271,6 @@
     </footer>
 
     <script src="app.js"></script>
+    <script src="menuResponsive.js"></script>
   </body>
 </html>

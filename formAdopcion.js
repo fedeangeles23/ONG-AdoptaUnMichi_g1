@@ -103,3 +103,6 @@ formAdopcion.querySelectorAll('input').forEach(input => {
     mensajeError.classList.add('d-none');
   });
 });
+
+
+

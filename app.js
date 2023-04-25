@@ -23,6 +23,7 @@ getNewImages();
 
 newImageButton.addEventListener("click", getNewImages);
 
+
 /* VALIDATE JS FUNCIONES FORM CONTACTO */
 
 const form = document.getElementById("form-contacto");
@@ -55,7 +56,7 @@ function enviarFormulario(event) {
   });
 
   if (validacion === undefined) {
-    // formulario valido aca hay que hacer la accion con esos datos
+    // formulario validado
     $("#contacto").submit(function (event) {
       event.preventDefault();
       $("body").children().not("header, footer").remove(); // Eliminar todos los elementos del body excepto header y footer
@@ -65,11 +66,15 @@ function enviarFormulario(event) {
       contenedorRespuesta.append(parrafoRespuesta);
       var botonInicio = $('<a>').attr('href', 'index.html').text('Volver al Inicio');
       botonInicio.on("click", function () {
-        location.href = "index.html"; // Redirigir al usuario al inicio al hacer clic en el botón
+        location.href = "index.html"; 
       });
-      contenedorRespuesta.append(botonInicio); // Agregar el botón al contenedor de respuesta
-      $("header").after(contenedorRespuesta); // Agregar el contenedor de respuesta justo después del header
+      contenedorRespuesta.append(botonInicio); 
+      $("header").after(contenedorRespuesta); 
+      
+      // Agregar estilo fixed al footer
+      $("footer").css("position", "fixed").css("bottom", "0").css('width',"100vw");
     });
+    
   } else {
     // formulario invalido
     for (const campo in validacion) {

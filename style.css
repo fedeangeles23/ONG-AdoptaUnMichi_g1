@@ -60,11 +60,66 @@ body{
       
     .navbar-nav {
        margin-left: auto;
-     }
-     
-     
-    
+     }   
 }
+
+/* Estilos para el menú desplegable */
+.menu-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: #FFA07A;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.3s ease;
+    z-index: 90;
+    margin-top: 6rem;
+}
+
+.menu {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    list-style-type: none;
+}
+
+.menu-item {
+    color: #F1F1F1;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+/* Animación para los elementos del menú al hacer clic */
+.menu-item {
+    opacity: 0;
+    transform: translateX(-100%);
+    transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.menu-item a{
+    text-decoration: none;
+    color: #F1F1F1;
+}
+
+.menu-overlay.active {
+    opacity: 1;
+    pointer-events: auto;
+}
+
+.menu-overlay.active .menu-item {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+
+/*Estilos Hero*/
 
 .hero{
     background-image: url("img/gatosCaja.webp");
@@ -229,8 +284,9 @@ body{
 
 @media (min-width: 768px) {
     .respuesta{
-        padding: 6rem 0;
+        padding: 12rem 0;
     }
+    
 }
 
 .respuesta p{
@@ -287,6 +343,14 @@ footer{
 
 .derechos{
     margin-top: 1rem;
+}
+
+@media (min-width: 768px) {
+    .footer-faq{
+        position: fixed;
+        width: 100vw;
+        bottom: 0;
+    } 
 }
 
 
