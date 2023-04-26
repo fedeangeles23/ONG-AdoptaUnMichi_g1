@@ -90,7 +90,7 @@ function enviarFormulario(event) {
 
 form.addEventListener("submit", enviarFormulario);
 
-// Remover mensaje de error al cambiar el contenido del campo
+// Remuevo mensaje de error al cambiar el contenido del campo
 form.querySelectorAll(".form-control").forEach((input) => {
   input.addEventListener("input", () => {
     input.classList.remove("is-invalid");

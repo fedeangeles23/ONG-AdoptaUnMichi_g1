@@ -107,7 +107,7 @@ function enviarFormularioAdop(event) {
 
 formAdopcion.addEventListener('submit', enviarFormularioAdop);
 
-// Remover mensaje de error al cambiar el contenido del campo
+// Remuevo mensaje de error al cambiar el contenido del campo
 formAdopcion.querySelectorAll('input').forEach(input => {
   input.addEventListener('input', () => {
     input.classList.remove('is-invalid');
